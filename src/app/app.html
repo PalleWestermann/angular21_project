@@ -1,2 +1,25 @@
-<app-data-binding></app-data-binding>
-<router-outlet></router-outlet>
+<!-- Bootstrap Navbar (no body tag, exactly two divs total) -->
+
+<div class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand text-white ms-3" href="#">MySite</a>
+  <ul class="navbar-nav ms-auto me-3">
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="add-employee">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="data-binding">Data Binding</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="employee-list">Employee List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="add-employee">Add Employee</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>
+
+
