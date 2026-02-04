@@ -9,5 +9,11 @@ import { Component } from '@angular/core';
 export class DataBinding {
   deptName = "HR";
   className = "danger";
-  inputType = "checkbox";
+  inputType = "radio";
+
+
+  showMessage() {
+    alert('Hello');
+  }
+
 }
