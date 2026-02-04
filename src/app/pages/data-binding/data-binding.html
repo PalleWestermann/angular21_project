@@ -7,3 +7,13 @@
 <input [type]="inputType">
 
 <button (click)="showMessage()">Show Message</button>
+
+<select name="cities" id="cities" (change)="changeCity()">
+  <option>Austin</option>
+  <option>Denver</option>
+  <option>New York</option>
+</select>
+
+<br>
+
+<input type="text" [(ngModel)]="deptName">
