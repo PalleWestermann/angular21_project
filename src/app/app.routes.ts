@@ -1,3 +1,4 @@
+import { AttributeDirective } from './pages/attribute-directive/attribute-directive';
 import { Routes } from '@angular/router';
 import { AddEmployee } from './pages/add-employee/add-employee';
 import { DataBinding } from './pages/data-binding/data-binding';
@@ -28,6 +29,10 @@ export const routes: Routes = [
   {
     path:'control-flow',
     component:ControlFlow,
+  },
+  {
+    path:'attribute-directive',
+    component:AttributeDirective,
   },
   {
     path:'signals',
