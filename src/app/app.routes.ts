@@ -3,6 +3,7 @@ import { AddEmployee } from './pages/add-employee/add-employee';
 import { DataBinding } from './pages/data-binding/data-binding';
 import { EmployeeList } from './pages/employee-list/employee-list';
 import { NotFound } from './pages/not-found/not-found';
+import { Signals } from './pages/signals/signals';
 
 export const routes: Routes = [
 
@@ -22,6 +23,10 @@ export const routes: Routes = [
   {
     path:'employee-list',
     component:EmployeeList,
+  },
+  {
+    path:'signals',
+    component:Signals,
   },
   {
     path:'**',
