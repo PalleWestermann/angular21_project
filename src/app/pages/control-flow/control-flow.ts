@@ -11,9 +11,15 @@ export class ControlFlow {
   isShowText : boolean = false;
   showSuccessLabel: WritableSignal<boolean> = signal(false);
   age = 0;
+  courses: string[] = ["Angular", "React"];
 
-ToggleLabelVisibility() {
-  this.showSuccessLabel.set(!this.showSuccessLabel())
-}
+  deptList = [
+   { name: "HR", id: 123 },
+   { name: "IT", id: 444 },
+  ];
+
+  ToggleLabelVisibility() {
+    this.showSuccessLabel.set(!this.showSuccessLabel())
+  }
 
 }

@@ -30,7 +30,44 @@
 </div>
 
 <div class="row">
-  <span>Child</span>
-  <span>Young</span>
-  <span>Old</span>
+  @if (age < 18){
+    <span>Child</span>
+  } @else if (age > 60) {
+    <span>Old</span>
+  } @else {
+    <span>Young</span>
+  }
 </div>
+
+<br>
+<br>
+<br>
+<div class="row">
+  <ul>
+    @for (item of courses; track $index) {
+      <li>{{item}}</li>
+    }
+  </ul>
+</div>
+
+<br>
+<br>
+<br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(item of deptList; track $index)
+    {
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+      </tr>
+    }
+  </tbody>
+</table>
